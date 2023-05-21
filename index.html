@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario de Descripción y Foto Georeferenciada</title>
+  </head>
+  <body>
+    <h1>Formulario</h1>
+    <form>
+      <label for="descripcion">Descripción:</label>
+      <input type="text" id="descripcion" name="descripcion" required>
+      <br>
+      <label for="foto">Foto:</label>
+      <input type="file" accept="image/*" capture="environment" id="foto" name="foto" required>
+      <br>
+      <button type="submit">Enviar</button>
+    </form>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
+
