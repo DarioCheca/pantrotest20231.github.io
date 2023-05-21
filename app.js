@@ -15,6 +15,10 @@ document.querySelector('form').addEventListener('submit', function(e) {
         var latitud = position.coords.latitude;
         var longitud = position.coords.longitude;
 
+        // Agregar la latitud y longitud al formulario
+        document.getElementById('latitud').value = latitud;
+        document.getElementById('longitud').value = longitud;
+
         // Hacer algo con la descripción, la foto y las coordenadas geográficas
         // por ejemplo, enviar los datos al servidor mediante una petición AJAX
 
@@ -28,4 +32,3 @@ document.querySelector('form').addEventListener('submit', function(e) {
     reader.readAsDataURL(foto);
   }
 });
-
